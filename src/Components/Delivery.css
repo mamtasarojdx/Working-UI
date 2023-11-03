@@ -1,0 +1,237 @@
+/* .before {
+    display: inline-block;
+    content: "";
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: -16px;
+    border-radius: 50%;
+    width: 76%;
+    height: 77%;
+} */
+.input-about {
+    color: grey;
+    font-size: 10px;
+}
+.about-mail {
+    width: 75%;
+    padding: 6px 11px;
+    background-color: #e4e4e4;
+}
+.about-btn {
+    padding: 10px 30px;
+    font-size: 13px;
+    margin-left: 10px;
+    background-color: white;
+    border-style: none;
+    border: 1px solid black;
+}
+.about-footer1{
+  display: none ;
+}
+.about-footer2{
+    display: block ;
+  }
+  
+  .about-shella2 {
+    font-size: 20px;
+    font-family: pacifico;
+    font-weight: bold;
+}
+#behance2{
+    font-size: 24px;
+    margin-left: 3%;
+}
+#skype2{
+    font-size: 24px;
+    margin-left: 2%;
+}
+#last-tw2{
+    font-size: 20px;
+    margin-left: 2%;
+}
+#last-fb2{
+    font-size: 24px;
+    margin-left: 40%;
+}
+#last-you2{
+    font-size: 24px;
+    margin-left: 3%;
+}
+#last-instagram2{
+    font-size: 24px;
+    margin-left: 3%;
+}
+#last-pin2{
+    font-size: 24px;
+    margin-left: 3%;
+}
+.arrow2{
+    margin-left: 18%;
+    color: black !important;
+}
+.shipping-time{
+    margin-left: -1%;
+}
+.customer6 {
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: -22px;
+    border-radius: 50%;
+    width: 822px;
+    height: 4px;
+}
+.customer7{
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: -22px;
+    border-radius: 50%;
+    width: 822px;
+    height: 4px;
+}
+.payment-method {
+    margin-left: 24%;
+}
+.exchange {
+    margin-left: 25%;
+}
+.customer3{
+    margin-left: -2%;
+}
+.follow-us{
+    padding-left: 12%;
+}
+.here-help{
+    padding-left: 4%;
+}
+.mail_1 {
+    width: 55%;
+    padding: 4px 12px;
+    background-color: #f4f4f4;
+   border: 1px solid #cfcbcb;
+}
+.btn_1{
+    width: 55%;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 13px;
+    padding: 6px 0px;
+    color: gray;
+}
+.customer8{
+
+  text-align: center;
+}
+.sale-about2 {
+    font-size: 9px;
+    padding: 0px 7px;
+    background-color: red;
+    color: white;
+    height: 0%;
+    margin: 2px 0px 0 7px;
+}
+.collect-return{
+    padding-left: 0px;
+}
+.personal-return{
+    padding-left: 0px;
+}
+.conversion{
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: 292px;
+    border-radius: 50%;
+    width: 822px;
+    height: 4px;
+
+}
+.payment-hr {
+    width: 75%;
+    margin: 40px 0 -35px -12px ;
+}
+.payment-hr3 {
+    width: 75%;
+    margin: 40px 0 -35px -21px;
+}
+.plus-return{
+    padding-left: 44%;
+}
+.plus-return1{
+    padding-left: 45%;
+}
+.plus-return2{
+    padding-left: 30%;
+}
+.contact-para{
+    font-size: 13px;
+    color: grey;
+}
+.contact-para2{
+    color: grey;
+    font-size: 14px;
+
+}
+.location-img {
+    width: 85%;
+    height: 40%;
+}
+.contact-para2{
+    font-size: 13px;
+    color: grey;
+}
+.contact-label{
+    font-size: 13px;
+}
+.contact-input1 {
+    background-color: #ededed;
+    border: 1px solid gray;
+    width: 98%;
+    padding: 5px 14px;
+}
+.contact-input2 {
+    background-color: #ededed;
+    border: 1px solid gray;
+    width: 98%;
+    padding: 5px 14px;
+    height: 135px;
+}
+::placeholder{
+    font-size: 13px;
+}
+:hover::-webkit-input-placeholder {
+    color: black;
+}
+.contact-input1:hover {
+    background-color: white;
+}
+.contact-input2:hover {
+    background-color: white;
+}
+.about-mail:hover {
+    background-color: white;
+}
+.about-btn:hover {
+    background-color: rgb(61, 60, 60);
+    color: white;
+}
+.contact-submit {
+    background-color: black;
+    color: white;
+    font-size: 13px;
+}
+.contact-submit:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    
+}
+.contact-hr {
+    margin: 60px 0 -23px 0;
+}
+.shop-hr {
+    width: 123%;
+    margin-left: -14%;
+    margin-top: -4px;
+}

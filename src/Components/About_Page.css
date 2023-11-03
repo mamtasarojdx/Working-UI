@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Cormorant:wght@300&family=Kanit:wght@200;400&family=Pacifico&family=Poppins:wght@200&family=Prompt:wght@300;600;700&family=Roboto:wght@100;300;400;500&display=swap');
+.sale-about {
+    font-size: 9px;
+    padding: 0px 7px;
+    background-color: red;
+    color: white;
+    height: 0%;
+    margin: 0px 0px 0 7px;
+
+}
+.sale-about2 {
+    font-size: 9px;
+    padding: 0px 7px;
+    background-color: red;
+    color: white;
+    height: 0%;
+    margin: 2px 0px 0 7px;
+}
+/* .laptop-hr {
+    width: 100%;
+    background-color: #969191;
+    margin: 10px 0 20px 0;
+} */
+.about-img {
+    width: 106%;
+    margin-left: -3%;
+}
+.annie-img{
+    width: 25%;
+}
+.annie-hr {
+    width: 111%;
+    color: grey;
+    margin-left: -6%;
+}
+.about-subscribe {
+    width: 121%;
+    margin-left: 40%;
+    padding: 5px 8px;
+    border: 1px solid black;
+    background-color: white;
+    color: #9b9696;
+    font-size: 14px;
+}
+.about-email {
+    width: 121%;
+    margin-left: 40%;
+    padding: 4px 8px;
+    border: 1px solid #c9c3c3;
+    background-color: #f5f4f4;
+}
+.input-about{
+   color: grey;
+   font-size: 10px;
+}
+.about-check{
+    margin-left: -179%;
+}
+.about-hr1 {
+    height: 1px;
+    width: 100%;
+    color: #928e8e;
+    margin: 0px 0 0px -3px;
+}
+.about-hr2 {
+    height: 1px;
+    width: 100%;
+    color: #928e8e;
+    margin: 0px 0 13px 0px;
+}
+.about-shella {
+    font-size: 20px;
+    font-family: pacifico;
+    font-weight: bold;
+}
+#behance{
+    font-size: 24px;
+    margin-left: 3%;
+}
+#skype{
+    font-size: 24px;
+    margin-left: 2%;
+}
+#last-tw {
+    font-size: 20px;
+    margin-left: 2%;
+}
+.paypal{
+    font-size: 22px;
+    margin-left: 25px;
+}
+.discover-about{
+    font-size: 22px;
+    margin-left: 25px;
+}
+.diner{
+    font-size: 22px;
+    margin-left: 25px;
+}
+.payment{
+    font-size: 22px;
+    margin-left: 25px;
+}
+.mastercard{
+    font-size: 22px;
+    margin-left: 25px;
+}
+.visa{
+    font-size: 22px;
+    margin-left: 0px;
+}
+
+.navbar-shella{
+    font-size: 20px;
+    font-family: pacifico;
+    font-weight: bold;
+}
+.about-icon{
+    margin: 0px 0 0 218px;
+    position: absolute;
+}
+.about-icon1{
+    margin: 0px 0 0 187px;
+    position: absolute;
+}
+.about-icon2{
+    margin: 0px 0 0 212px;
+    position: absolute;
+}
+.about-icon3{
+    margin: 0px 0 0 185px;
+    position: absolute;
+}
+.question2{
+  margin-left: -42%;
+}
+.book2{
+    margin-left: 8%;
+  }
+  .heart2{
+    margin-left: 8%;
+  }
+  .scale2{
+    margin-left: 8%;
+  }
+  .cart2{
+    margin-left: 8%;
+  }
+  .about-english{
+    margin-left: 2%;
+    font-size: 13px;
+  }
+  .about-bag{
+    margin-left: 2%;
+    font-size: 13px;
+  }
+  .home1 {
+    text-align: start;
+    padding-left: 4%;
+}
+  .about-store{
+    text-align: center;
+  }
+  .about-hr {
+    margin-top: 0%;
+    width: 100%;
+    margin-left: 0%;
+}
+.hide1 {
+    font-size: 13px !important;
+    color: white !important;
+    background-color: white !important;
+    justify-content: space-around;
+}
+.layout-img{
+    width: 100%;
+}
+.about-search{
+  margin-left: 40%;
+}
+.about-search2{
+    position: absolute;
+    right: 1%;
+    top: 5px;
+}
+.search-icon {
+   margin-top: -9%;
+}
+.about-footer1{
+    display: none;
+  }
+.about-footer2{
+      display: block;
+}
+::placeholder{
+    font-size: 13px;
+}
+:hover::-webkit-input-placeholder {
+    color: black;
+}
+.about-mail:hover {
+    background-color: white;
+}
+.about-btn:hover {
+    background-color: rgb(61, 60, 60);
+    color: white;
+}
+.about-a{
+    width: 100%;
+}
