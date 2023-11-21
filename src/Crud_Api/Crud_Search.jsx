@@ -94,20 +94,16 @@ function Crud_Search() {
 
   const filteredArray2 = data.filter((item) => {
     if (searchText2) {
-      console.log(searchText2);
       return item.id.toString() === searchText2;
     } else {
-      console.log("no id");
       return "No result found";
     }
   });
 
   const filteredArray = filteredArray2.filter((item) => {
     if (searchText) {
-      console.log(searchText);
       return item.name.toLowerCase().includes(searchText.toLowerCase());
     } else {
-      console.log("no name");
       return "No result found";
     }
   });
@@ -298,8 +294,9 @@ function Crud_Search() {
                 <>
                   {searchText ? (
                     <>
-                      {searchText
-                        ? filteredArray.map((item) => (
+                      {searchText ? (
+                        filteredArray.length ? (
+                          filteredArray.map((item) => (
                             <tr key={item.id}>
                               <td>{item.id}</td>
                               <td>{item.name}</td>
@@ -360,12 +357,82 @@ function Crud_Search() {
                               </td>
                             </tr>
                           ))
-                        : "no data"}
+                        ) : (
+                          <>
+                            <div className="d-flex justify-content-center align-items-center position absolute" style={{ height: "200px", width: "100vw" }}>
+                              <p className="m-0 data-found">No data found</p>
+                            </div>
+                          </>
+                        )
+                      ) : (
+                        currentPost.map((item) => (
+                          <tr key={item.id}>
+                            <td>{item.id}</td>
+                            <td>{item.name}</td>
+                            <td>{item.email}</td>
+                            <td>{item.mobile}</td>
+                            <td>{item.address}</td>
+                            <td>{item.gender}</td>
+                            <td>{item.hobbies ? item.hobbies + " " : item.hobbies}</td>
+                            <td>{item.preferences}</td>
+
+                            <td>
+                              <Link to={`/update/${item.id}`}>
+                                <button type="button" className="edit-btn">
+                                  Edit
+                                </button>
+                              </Link>
+                            </td>
+                            <td>
+                              {/* <button type="button" className="dlt-btn" onClick={(e) => DeleteFunction(item.id)}>
+                    Delete
+                  </button> */}
+
+                              <button
+                                type="button"
+                                className="dlt-btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"
+                                onClick={(e) => DeleteFunction(item.id)}
+                              >
+                                Delete
+                              </button>
+
+                              <div
+                                className="modal fade crud-delete"
+                                id="staticBackdrop"
+                                data-bs-backdrop="static"
+                                data-bs-keyboard="false"
+                                tabIndex="-1"
+                                aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true"
+                              >
+                                <div className="modal-dialog">
+                                  <div className="modal-content">
+                                    <div className="modal-header">
+                                      <h5 className="modal-title" id="staticBackdropLabel"></h5>
+                                      {/* <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> */}
+                                    </div>
+                                    <div className="modal-body">Successfully deleted</div>
+                                    <div className="modal-footer">
+                                      <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
+                                        ok
+                                      </button>
+                                      {/* <button type="button" className="btn btn-primary">Understood</button> */}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        ))
+                      )}
                     </>
                   ) : (
                     <>
-                      {searchText2
-                        ? filteredArray2.map((item) => (
+                      {searchText2 ? (
+                        filteredArray2.length ? (
+                          filteredArray2.map((item) => (
                             <tr key={item.id}>
                               <td>{item.id}</td>
                               <td>{item.name}</td>
@@ -385,8 +452,8 @@ function Crud_Search() {
                               </td>
                               <td>
                                 {/* <button type="button" className="dlt-btn" onClick={(e) => DeleteFunction(item.id)}>
-                      Delete
-                    </button> */}
+                    Delete
+                  </button> */}
 
                                 <button
                                   type="button"
@@ -426,67 +493,76 @@ function Crud_Search() {
                               </td>
                             </tr>
                           ))
-                        : currentPost.map((item) => (
-                            <tr key={item.id}>
-                              <td>{item.id}</td>
-                              <td>{item.name}</td>
-                              <td>{item.email}</td>
-                              <td>{item.mobile}</td>
-                              <td>{item.address}</td>
-                              <td>{item.gender}</td>
-                              <td>{item.hobbies ? item.hobbies + " " : item.hobbies}</td>
-                              <td>{item.preferences}</td>
+                        ) : (
+                          <>
+                            <div className="d-flex justify-content-center align-items-center position absolute" style={{ height: "200px", width: "100vw" }}>
+                              <p className="m-0 data-found">No data found</p>
+                            </div>
+                          </>
+                        )
+                      ) : (
+                        currentPost.map((item) => (
+                          <tr key={item.id}>
+                            <td>{item.id}</td>
+                            <td>{item.name}</td>
+                            <td>{item.email}</td>
+                            <td>{item.mobile}</td>
+                            <td>{item.address}</td>
+                            <td>{item.gender}</td>
+                            <td>{item.hobbies ? item.hobbies + " " : item.hobbies}</td>
+                            <td>{item.preferences}</td>
 
-                              <td>
-                                <Link to={`/update/${item.id}`}>
-                                  <button type="button" className="edit-btn">
-                                    Edit
-                                  </button>
-                                </Link>
-                              </td>
-                              <td>
-                                {/* <button type="button" className="dlt-btn" onClick={(e) => DeleteFunction(item.id)}>
-                      Delete
-                    </button> */}
-
-                                <button
-                                  type="button"
-                                  className="dlt-btn"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#staticBackdrop"
-                                  onClick={(e) => DeleteFunction(item.id)}
-                                >
-                                  Delete
+                            <td>
+                              <Link to={`/update/${item.id}`}>
+                                <button type="button" className="edit-btn">
+                                  Edit
                                 </button>
+                              </Link>
+                            </td>
+                            <td>
+                              {/* <button type="button" className="dlt-btn" onClick={(e) => DeleteFunction(item.id)}>
+                    Delete
+                  </button> */}
 
-                                <div
-                                  className="modal fade crud-delete"
-                                  id="staticBackdrop"
-                                  data-bs-backdrop="static"
-                                  data-bs-keyboard="false"
-                                  tabIndex="-1"
-                                  aria-labelledby="staticBackdropLabel"
-                                  aria-hidden="true"
-                                >
-                                  <div className="modal-dialog">
-                                    <div className="modal-content">
-                                      <div className="modal-header">
-                                        <h5 className="modal-title" id="staticBackdropLabel"></h5>
-                                        {/* <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> */}
-                                      </div>
-                                      <div className="modal-body">Successfully deleted</div>
-                                      <div className="modal-footer">
-                                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
-                                          ok
-                                        </button>
-                                        {/* <button type="button" className="btn btn-primary">Understood</button> */}
-                                      </div>
+                              <button
+                                type="button"
+                                className="dlt-btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"
+                                onClick={(e) => DeleteFunction(item.id)}
+                              >
+                                Delete
+                              </button>
+
+                              <div
+                                className="modal fade crud-delete"
+                                id="staticBackdrop"
+                                data-bs-backdrop="static"
+                                data-bs-keyboard="false"
+                                tabIndex="-1"
+                                aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true"
+                              >
+                                <div className="modal-dialog">
+                                  <div className="modal-content">
+                                    <div className="modal-header">
+                                      <h5 className="modal-title" id="staticBackdropLabel"></h5>
+                                      {/* <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> */}
+                                    </div>
+                                    <div className="modal-body">Successfully deleted</div>
+                                    <div className="modal-footer">
+                                      <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
+                                        ok
+                                      </button>
+                                      {/* <button type="button" className="btn btn-primary">Understood</button> */}
                                     </div>
                                   </div>
                                 </div>
-                              </td>
-                            </tr>
-                          ))}
+                              </div>
+                            </td>
+                          </tr>
+                        ))
+                      )}
                     </>
                   )}
                 </>
