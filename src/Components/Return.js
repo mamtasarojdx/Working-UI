@@ -375,18 +375,15 @@ function Return() {
                     style={active === 8 ? { color: "black  " } : { color: "rgb(113, 107, 110)" }}
                     onMouseLeave={() => IsActive(0)}
                   >
-                    BUYNOW!{" "}
-                    <span className="sale-about2">SALE</span>
+                    BUYNOW! <span className="sale-about2">SALE</span>
                   </a>
                 </li>
                 <li className="nav-item  a1">
-                  <a
-                    className="nav-link d-flex about-search2"
-                    href="#">SEARCH
-                  
-                   <span className="search-icon" style={{ fontSize: "25px" }}>
-  <AiOutlineSearch />
-</span>
+                  <a className="nav-link d-flex about-search2" href="#">
+                    SEARCH
+                    <span className="search-icon" style={{ fontSize: "25px" }}>
+                      <AiOutlineSearch />
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -423,7 +420,6 @@ function Return() {
             </>
           )}
         </div>
-
       </div>
 
       <hr className="about-hr2" />
@@ -433,7 +429,7 @@ function Return() {
       <div className="home1 mt-4" style={{ color: "grey", fontSize: "10px" }}>
         <p className="home1">Home / Privacy Policy</p>
         <p className="about-store mt-2" style={{ color: "black", fontSize: "20px" }}>
-        Privacy Policy
+          Privacy Policy
         </p>
 
         <p className="mt-4 mb-4 text-center should" style={{ fontSize: "13px" }}>
@@ -447,9 +443,7 @@ function Return() {
       <div className="container shipping-time mt-5">
         <div className="d-flex justify-content-center ">
           <div className="text-start">
-            <div className="mb-3 welcome-return">
-              WELCOME TO SHELLA’S PRIVACY POLICY{" "}
-            </div>
+            <div className="mb-3 welcome-return">WELCOME TO SHELLA’S PRIVACY POLICY </div>
             <div className="customer-1" style={{ fontSize: "14px", color: "grey" }}>
               <PiDotOutlineFill style={{ color: "black", fontSize: "18px" }} />
               Complimentary ground shipping within 1 to 7 business days{" "}
@@ -476,7 +470,6 @@ function Return() {
 
       <div className="payment-method">
         <div className="d-flex mt-5 customer4 collect-return">
-         
           <p>THE TYPE OF PERSONAL INFORMATION WE COLLECT</p>
         </div>
         <p className="customer5 text-secondary" style={{ fontSize: "14px" }}>
@@ -499,7 +492,6 @@ function Return() {
 
       <div className="exchange mb-5">
         <div className="d-flex mt-5 customer3 personal-return">
-        
           <p>HOW WE COLLECT PERSONAL INFORMATION</p>
         </div>
         <p className="text-secondary customer7 mt-2" style={{ fontSize: "14px" }}>
@@ -512,11 +504,13 @@ function Return() {
 
       {/* plus content */}
       <div className="about-footer1">
-      <hr className="news-hr" />
-      <div className="text-center mt-5">
-        <h6 className="text-uppercase">Newsletter subscription</h6>
-        <p style={{ fontSize: "12px", color: "#898282" }}>Sign up for Shella updates to receive information about new arrivals, future events and specials.</p>
-      </div>
+        <hr className="news-hr" />
+        <div className="text-center mt-5">
+          <h6 className="text-uppercase">Newsletter subscription</h6>
+          <p style={{ fontSize: "12px", color: "#898282" }}>
+            Sign up for Shella updates to receive information about new arrivals, future events and specials.
+          </p>
+        </div>
         <div className="container text-center mb-2">
           <div className="col-lg-6 col-md-6 col-sm-6 mb-3">
             <input type="email" placeholder="Enter Your Email Address" className="about-email"></input>{" "}
@@ -832,13 +826,12 @@ function Return() {
               </div>
             </div>
             <div className="col-lg-6 d-flex">
-              <BiLogoFacebook id="last-fb2" />
-              <RiTwitterXFill id="last-tw2" />
-              <LiaInstagram id="last-instagram2" />
-              <RiPinterestFill id="last-pin2" />
-              <BiLogoYoutube id="last-you2" />
-              <BiLogoBehance id="behance2" />
-              <TiSocialSkype id="skype2" />
+              <FaCcVisa id="last-fb2" />
+              <FaCcMastercard className="mastercard" />
+              <MdPayments className="payment" />
+              <FaCcPaypal className="paypal" />
+              <FaCcDinersClub className="diner" />
+              <FaCcDiscover className="discover-about" />
               <a href="#up-arrow" className="arrow2">
                 <BsArrowUp />
               </a>

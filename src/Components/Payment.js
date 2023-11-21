@@ -49,13 +49,13 @@ function Payment() {
   const [showText3, setShowText3] = useState(false);
   const [showText4, setShowText4] = useState(false);
   const [showText5, setShowText5] = useState(false);
-  
+
   const [showText6, setShowText6] = useState(true);
   const [showText7, setShowText7] = useState(true);
   const [showText8, setShowText8] = useState(true);
   const [isHovered1, setIsHovered1] = useState(false);
   const [iconHovered, setIconHovered] = useState(false);
- 
+
   const [active, IsActive] = useState("");
 
   return (
@@ -333,10 +333,16 @@ function Payment() {
                     </a>
                     <div class="dropdown-content">
                       <div style={{ color: "grey" }}>About Us</div>
-                      <Link to="/delivery-page" style={{ textDecoration: "none"}}><div style={{ color: "grey" }}>Customer Service</div></Link>
+                      <Link to="/delivery-page" style={{ textDecoration: "none" }}>
+                        <div style={{ color: "grey" }}>Customer Service</div>
+                      </Link>
                       <div style={{ color: "grey" }}>Sizing Guide</div>
-                      <Link to="/payment-page" style={{ textDecoration: "none"}}><div style={{ color: "grey" }}>FAQs</div></Link>
-                      <Link to="/contacts-page" style={{ textDecoration: "none"}}><div style={{ color: "grey" }}>Contact Us</div></Link>
+                      <Link to="/payment-page" style={{ textDecoration: "none" }}>
+                        <div style={{ color: "grey" }}>FAQs</div>
+                      </Link>
+                      <Link to="/contacts-page" style={{ textDecoration: "none" }}>
+                        <div style={{ color: "grey" }}>Contact Us</div>
+                      </Link>
                       <div style={{ color: "grey" }}>Brands</div>
                       <div style={{ color: "grey" }}>Brands V2</div>
                       <div style={{ color: "grey" }}>Coming Soon</div>
@@ -381,18 +387,15 @@ function Payment() {
                     style={active === 8 ? { color: "black  " } : { color: "rgb(113, 107, 110)" }}
                     onMouseLeave={() => IsActive(0)}
                   >
-                    BUYNOW!{" "}
-                    <span className="sale-about2">SALE</span>
+                    BUYNOW! <span className="sale-about2">SALE</span>
                   </a>
                 </li>
                 <li className="nav-item  a1">
-                  <a
-                    className="nav-link d-flex about-search2"
-                    href="#">SEARCH
-                  
-                   <span className="search-icon" style={{ fontSize: "25px" }}>
-  <AiOutlineSearch />
-</span>
+                  <a className="nav-link d-flex about-search2" href="#">
+                    SEARCH
+                    <span className="search-icon" style={{ fontSize: "25px" }}>
+                      <AiOutlineSearch />
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -429,7 +432,6 @@ function Payment() {
             </>
           )}
         </div>
-
       </div>
 
       <hr className="about-hr2" />
@@ -439,102 +441,93 @@ function Payment() {
       <div className="home1 mt-4" style={{ color: "grey", fontSize: "10px" }}>
         <p className="home1">Home / FAQs</p>
         <p className="about-store mt-2" style={{ color: "black", fontSize: "22px" }}>
-        FAQs
+          FAQs
         </p>
 
         <p className="mt-4 mb-4 text-center conversion" style={{ fontSize: "13px" }}>
-        This is an approximate conversion table to help you find your size. If you have already purchased an item by our brand, we recommend you select the same size as indicated on its label.
+          This is an approximate conversion table to help you find your size. If you have already purchased an item by our brand, we recommend you select the
+          same size as indicated on its label.
         </p>
       </div>
 
       {/* ------big img------ */}
 
       {/* -------big img content ----- */}
-    
+
       <div className="payment-method">
-      <hr className="payment-hr"/>
+        <hr className="payment-hr" />
         <div className="d-flex mt-5 customer4 collect-return">
-         
-          <p onClick={() => setShowText8(!showText8)}>WHAT ARE SHIPPING TIMES AND COSTS?</p> <span className="plus-return" onClick={() => setShowText8(!showText8)}>
-              <BsPlus />
-            </span>
+          <p onClick={() => setShowText8(!showText8)}>WHAT ARE SHIPPING TIMES AND COSTS?</p>{" "}
+          <span className="plus-return" onClick={() => setShowText8(!showText8)}>
+            <BsPlus />
+          </span>
         </div>
         {showText8 && (
-              <>
-        <ul className="customer6 text-secondary" style={{ fontSize: "14px" }}>
-          <li>
-          Complimentary ground shipping within 1 to 7 business days
-          </li>
-          <li>
-          In-store collection available within 1 to 7 business days
-          </li>
-          <li>
-          Next-day and Express delivery options also available
-          </li>
-          <li>
-          Purchases are delivered in an orange box tied with a Bolduc ribbon, with the exception of certain items
-          </li>
-          <li>
-          See the delivery FAQs for details on shipping methods, costs and delivery times
-          </li>
-        </ul>{" "} </>
-            )}
+          <>
+            <ul className="customer6 text-secondary" style={{ fontSize: "14px" }}>
+              <li>Complimentary ground shipping within 1 to 7 business days</li>
+              <li>In-store collection available within 1 to 7 business days</li>
+              <li>Next-day and Express delivery options also available</li>
+              <li>Purchases are delivered in an orange box tied with a Bolduc ribbon, with the exception of certain items</li>
+              <li>See the delivery FAQs for details on shipping methods, costs and delivery times</li>
+            </ul>{" "}
+          </>
+        )}
       </div>
 
-      
       <div className="payment-method">
-      <hr className="payment-hr"/>
+        <hr className="payment-hr" />
         <div className="d-flex mt-5 customer4 collect-return">
-         
-          <p onClick={() => setShowText6(!showText6)}>WHAT PAYMENT METHODS CAN I USE?</p> <span className="plus-return1" onClick={() => setShowText6(!showText6)}>
-              <BsPlus />
-            </span>
+          <p onClick={() => setShowText6(!showText6)}>WHAT PAYMENT METHODS CAN I USE?</p>{" "}
+          <span className="plus-return1" onClick={() => setShowText6(!showText6)}>
+            <BsPlus />
+          </span>
         </div>
         {showText6 && (
-              <>
-        <p className="customer5 text-secondary" style={{ fontSize: "14px" }}>
-          Shella accepts the following payment methods:-
-        </p>
-        
-        <ul className="customer6 text-secondary" style={{ fontSize: "14px" }}>
-          <li>
-            Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.
-          </li>
-          <li>
-            Shella features a Fast Checkout option, allowing you to securely save your credit card details so that you don't have to re-enter them for future
-            purchases.
-          </li>
-          <li>
-            PayPal: Shop easily online without having to enter your credit card details on the website.Your account will be charged once the order is completed.
-            To register for a PayPal account, visit the website paypal.com.
-          </li>
-        </ul>{" "} </>
-            )}
+          <>
+            <p className="customer5 text-secondary" style={{ fontSize: "14px" }}>
+              Shella accepts the following payment methods:-
+            </p>
+            <ul className="customer6 text-secondary" style={{ fontSize: "14px" }}>
+              <li>
+                Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.
+              </li>
+              <li>
+                Shella features a Fast Checkout option, allowing you to securely save your credit card details so that you don't have to re-enter them for
+                future purchases.
+              </li>
+              <li>
+                PayPal: Shop easily online without having to enter your credit card details on the website.Your account will be charged once the order is
+                completed. To register for a PayPal account, visit the website paypal.com.
+              </li>
+            </ul>{" "}
+          </>
+        )}
       </div>
 
-     
       <div className="exchange mb-5">
-      <hr className="payment-hr3"/>
+        <hr className="payment-hr3" />
         <div className="d-flex mt-5 customer3 personal-return">
-       
-          <p onClick={() => setShowText7(!showText7)}>WHAT IS YOUR EXCHANGES, RETURNS AND REFUNDS POLICY?</p> <span className="plus-return2" onClick={() => setShowText7(!showText7)}>
-              <BsPlus />
-            </span>
+          <p onClick={() => setShowText7(!showText7)}>WHAT IS YOUR EXCHANGES, RETURNS AND REFUNDS POLICY?</p>{" "}
+          <span className="plus-return2" onClick={() => setShowText7(!showText7)}>
+            <BsPlus />
+          </span>
         </div>
         {showText7 && (
-              <>
-        <p className="text-secondary customer7 mt-2" style={{ fontSize: "14px" }}>
-          Items returned within 14 days of their original shipment date in same as new condition will be eligible for a full refund or store credit.Refunds will
-          be charged back to the original form of payment used for purchase. Customer is responsible for shipping charges when making returns and
-          shipping/handling fees of original purchase is non-refundable.
-        </p> </>
-            )}
+          <>
+            <p className="text-secondary customer7 mt-2" style={{ fontSize: "14px" }}>
+              Items returned within 14 days of their original shipment date in same as new condition will be eligible for a full refund or store credit.Refunds
+              will be charged back to the original form of payment used for purchase. Customer is responsible for shipping charges when making returns and
+              shipping/handling fees of original purchase is non-refundable.
+            </p>{" "}
+          </>
+        )}
       </div>
       <hr className="exchange-hr"></hr>
 
       {/* plus content */}
       <div className="about-footer1">
-      <hr className="news-hr" />
+        <hr className="news-hr" />
         <div className="text-center">
           <h5>Newsletter subscription</h5>
           <p style={{ fontSize: "12px", color: "grey" }}>Sign up for Shella updates to receive information about new arrivals, future events and specials.</p>
@@ -848,13 +841,12 @@ function Payment() {
               </div>
             </div>
             <div className="col-lg-6 d-flex">
-              <BiLogoFacebook id="last-fb2" />
-              <RiTwitterXFill id="last-tw2" />
-              <LiaInstagram id="last-instagram2" />
-              <RiPinterestFill id="last-pin2" />
-              <BiLogoYoutube id="last-you2" />
-              <BiLogoBehance id="behance2" />
-              <TiSocialSkype id="skype2" />
+              <FaCcVisa id="last-fb2" />
+              <FaCcMastercard className="mastercard" />
+              <MdPayments className="payment" />
+              <FaCcPaypal className="paypal" />
+              <FaCcDinersClub className="diner" />
+              <FaCcDiscover className="discover-about" />
               <a href="#up-arrow" className="arrow2">
                 <BsArrowUp />
               </a>

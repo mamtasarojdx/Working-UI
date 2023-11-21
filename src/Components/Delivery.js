@@ -328,10 +328,16 @@ function Delivery() {
                     </a>
                     <div class="dropdown-content">
                       <div style={{ color: "grey" }}>About Us</div>
-                      <Link to="/delivery-page" style={{ textDecoration: "none"}}><div style={{ color: "grey" }}>Customer Service</div></Link>
+                      <Link to="/delivery-page" style={{ textDecoration: "none" }}>
+                        <div style={{ color: "grey" }}>Customer Service</div>
+                      </Link>
                       <div style={{ color: "grey" }}>Sizing Guide</div>
-                      <Link to="/payment-page" style={{ textDecoration: "none"}}><div style={{ color: "grey" }}>FAQs</div></Link>
-                      <Link to="/contacts-page" style={{ textDecoration: "none"}}><div style={{ color: "grey" }}>Contact Us</div></Link>
+                      <Link to="/payment-page" style={{ textDecoration: "none" }}>
+                        <div style={{ color: "grey" }}>FAQs</div>
+                      </Link>
+                      <Link to="/contacts-page" style={{ textDecoration: "none" }}>
+                        <div style={{ color: "grey" }}>Contact Us</div>
+                      </Link>
                       <div style={{ color: "grey" }}>Brands</div>
                       <div style={{ color: "grey" }}>Brands V2</div>
                       <div style={{ color: "grey" }}>Coming Soon</div>
@@ -376,18 +382,15 @@ function Delivery() {
                     style={active === 8 ? { color: "black  " } : { color: "rgb(113, 107, 110)" }}
                     onMouseLeave={() => IsActive(0)}
                   >
-                    BUYNOW!{" "}
-                    <span className="sale-about2">SALE</span>
+                    BUYNOW! <span className="sale-about2">SALE</span>
                   </a>
                 </li>
                 <li className="nav-item  a1">
-                  <a
-                    className="nav-link d-flex about-search2"
-                    href="#">SEARCH
-                  
-                   <span className="search-icon" style={{ fontSize: "25px" }}>
-  <AiOutlineSearch />
-</span>
+                  <a className="nav-link d-flex about-search2" href="#">
+                    SEARCH
+                    <span className="search-icon" style={{ fontSize: "25px" }}>
+                      <AiOutlineSearch />
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -424,7 +427,6 @@ function Delivery() {
             </>
           )}
         </div>
-
       </div>
 
       <hr className="about-hr2" />
@@ -514,11 +516,13 @@ function Delivery() {
 
       {/* plus content */}
       <div className="about-footer1">
-      <hr className="news-hr" />
-      <div className="text-center mt-5">
-        <h6 className="text-uppercase">Newsletter subscription</h6>
-        <p style={{ fontSize: "12px", color: "#898282" }}>Sign up for Shella updates to receive information about new arrivals, future events and specials.</p>
-      </div>
+        <hr className="news-hr" />
+        <div className="text-center mt-5">
+          <h6 className="text-uppercase">Newsletter subscription</h6>
+          <p style={{ fontSize: "12px", color: "#898282" }}>
+            Sign up for Shella updates to receive information about new arrivals, future events and specials.
+          </p>
+        </div>
         <div className="container text-center mb-2">
           <div className="col-lg-6 col-md-6 col-sm-6 mb-3">
             <input type="email" placeholder="Enter Your Email Address" className="about-email"></input>{" "}
@@ -538,7 +542,6 @@ function Delivery() {
             <br /> Nunc scelerisque viverra mauris in.
           </p>
         </div>
-
 
         <div className="container text-center">
           <hr className="about-hr" />
@@ -835,13 +838,12 @@ function Delivery() {
               </div>
             </div>
             <div className="col-lg-6 d-flex">
-              <BiLogoFacebook id="last-fb2" />
-              <RiTwitterXFill id="last-tw2" />
-              <LiaInstagram id="last-instagram2" />
-              <RiPinterestFill id="last-pin2" />
-              <BiLogoYoutube id="last-you2" />
-              <BiLogoBehance id="behance2" />
-              <TiSocialSkype id="skype2" />
+              <FaCcVisa id="last-fb2" />
+              <FaCcMastercard className="mastercard" />
+              <MdPayments className="payment" />
+              <FaCcPaypal className="paypal" />
+              <FaCcDinersClub className="diner" />
+              <FaCcDiscover className="discover-about" />
               <a href="#up-arrow" className="arrow2">
                 <BsArrowUp />
               </a>

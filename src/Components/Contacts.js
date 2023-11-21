@@ -329,10 +329,16 @@ function Contacts() {
                     </a>
                     <div class="dropdown-content">
                       <div style={{ color: "grey" }}>About Us</div>
-                      <Link to="/delivery-page" style={{ textDecoration: "none"}}><div style={{ color: "grey" }}>Customer Service</div></Link>
+                      <Link to="/delivery-page" style={{ textDecoration: "none" }}>
+                        <div style={{ color: "grey" }}>Customer Service</div>
+                      </Link>
                       <div style={{ color: "grey" }}>Sizing Guide</div>
-                      <Link to="/payment-page" style={{ textDecoration: "none"}}><div style={{ color: "grey" }}>FAQs</div></Link>
-                      <Link to="/contacts-page" style={{ textDecoration: "none"}}><div style={{ color: "grey" }}>Contact Us</div></Link>
+                      <Link to="/payment-page" style={{ textDecoration: "none" }}>
+                        <div style={{ color: "grey" }}>FAQs</div>
+                      </Link>
+                      <Link to="/contacts-page" style={{ textDecoration: "none" }}>
+                        <div style={{ color: "grey" }}>Contact Us</div>
+                      </Link>
                       <div style={{ color: "grey" }}>Brands</div>
                       <div style={{ color: "grey" }}>Brands V2</div>
                       <div style={{ color: "grey" }}>Coming Soon</div>
@@ -377,18 +383,15 @@ function Contacts() {
                     style={active === 8 ? { color: "black  " } : { color: "rgb(113, 107, 110)" }}
                     onMouseLeave={() => IsActive(0)}
                   >
-                    BUYNOW!{" "}
-                    <span className="sale-about2">SALE</span>
+                    BUYNOW! <span className="sale-about2">SALE</span>
                   </a>
                 </li>
                 <li className="nav-item  a1">
-                  <a
-                    className="nav-link d-flex about-search2"
-                    href="#">SEARCH
-                  
-                   <span className="search-icon" style={{ fontSize: "25px" }}>
-  <AiOutlineSearch />
-</span>
+                  <a className="nav-link d-flex about-search2" href="#">
+                    SEARCH
+                    <span className="search-icon" style={{ fontSize: "25px" }}>
+                      <AiOutlineSearch />
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -425,9 +428,7 @@ function Contacts() {
             </>
           )}
         </div>
-
       </div>
-
 
       <hr className="about-hr2" />
 
@@ -812,13 +813,12 @@ function Contacts() {
               </div>
             </div>
             <div className="col-lg-6 d-flex">
-              <BiLogoFacebook id="last-fb2" />
-              <RiTwitterXFill id="last-tw2" />
-              <LiaInstagram id="last-instagram2" />
-              <RiPinterestFill id="last-pin2" />
-              <BiLogoYoutube id="last-you2" />
-              <BiLogoBehance id="behance2" />
-              <TiSocialSkype id="skype2" />
+              <FaCcVisa id="last-fb2" />
+              <FaCcMastercard className="mastercard" />
+              <MdPayments className="payment" />
+              <FaCcPaypal className="paypal" />
+              <FaCcDinersClub className="diner" />
+              <FaCcDiscover className="discover-about" />
               <a href="#up-arrow" className="arrow2">
                 <BsArrowUp />
               </a>

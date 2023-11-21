@@ -778,13 +778,12 @@ function AboutPage() {
               </div>
             </div>
             <div className="col-lg-6 d-flex">
-              <BiLogoFacebook id="last-fb2" />
-              <RiTwitterXFill id="last-tw2" />
-              <LiaInstagram id="last-instagram2" />
-              <RiPinterestFill id="last-pin2" />
-              <BiLogoYoutube id="last-you2" />
-              <BiLogoBehance id="behance2" />
-              <TiSocialSkype id="skype2" />
+              <FaCcVisa id="last-fb2" />
+              <FaCcMastercard className="mastercard" />
+              <MdPayments className="payment" />
+              <FaCcPaypal className="paypal" />
+              <FaCcDinersClub className="diner" />
+              <FaCcDiscover className="discover-about" />
               <a href="#up-arrow" className="arrow2">
                 <BsArrowUp />
               </a>
