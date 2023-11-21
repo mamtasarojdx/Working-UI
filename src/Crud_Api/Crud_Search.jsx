@@ -19,7 +19,6 @@ function Crud_Search() {
       .then((res) => setData(res.data))
       .catch((error) => console.log(error));
   }
-  
 
   function DeleteFunction(id) {
     fetch(`http://localhost:3000/posts/${id}`, {
@@ -94,23 +93,24 @@ function Crud_Search() {
   };
 
   const filteredArray2 = data.filter((item) => {
-  if(searchText2){
-   return item.id.toString() === searchText2
-  }else{
-  return "no data"
-  }
-   
+    if (searchText2) {
+      console.log(searchText2);
+      return item.id.toString() === searchText2;
+    } else {
+      console.log("no id");
+      return "No result found";
+    }
   });
 
   const filteredArray = filteredArray2.filter((item) => {
-    if(searchText){
-     return item.name.toLowerCase().includes(searchText.toLowerCase())
-    }else{
-      return "no data"
-      }
-       
-      });
-    
+    if (searchText) {
+      console.log(searchText);
+      return item.name.toLowerCase().includes(searchText.toLowerCase());
+    } else {
+      console.log("no name");
+      return "No result found";
+    }
+  });
 
   const filteredArray3 = currentPost.filter((item) => {
     if (isNaN(searchText3)) {
@@ -136,7 +136,7 @@ function Crud_Search() {
               <h5 className="d-flex">
                 <input type="text" placeholder="Search id" className="crud-search" onChange={handleSearch2}></input>
                 <input type="text" placeholder="Search name" className="crud-search " onChange={handleSearch}></input>
-                <input type="text" placeholder="Search per page" className="crud-search " onChange={handleSearch3}></input>
+                <input type="text" placeholder="Search page" className="crud-search " onChange={handleSearch3}></input>
               </h5>
             </div>
 
