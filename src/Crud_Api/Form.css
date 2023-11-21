@@ -1,0 +1,62 @@
+.form-1 {
+    background-color: #825fc39f;
+    height: 690px;
+}
+
+.home-icon {
+    background-color: white;
+    color: black;
+    width: 6%;
+    padding: 0px 15px 6px 8px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: -15%;
+}
+
+.registration-form {
+    color: white;
+    font-weight: bolder;
+    margin-top: 27%;
+    font-size: 55px;
+}
+
+.form-text {
+    color: white;
+    font-weight: bolder;
+    margin-left: -33%;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 20px;
+    margin: 40px 0 0 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.submit {
+    color: #fff;
+    width: 100%;
+    background-color: #825fc39f;
+    border-color: #825fc39f;
+    padding: 5px 0;
+    border-radius: 4px;
+}
+
+.skills {
+    width: 76%;
+    padding: 4px 6px;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+}
+
+.regis-text2 {
+    text-decoration: underline;
+}
+
+.regis-text {
+    font-size: 28px;
+    font-weight: 600;
+}

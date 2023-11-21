@@ -94,9 +94,9 @@ function CustomSlider() {
                 {" "}
                 <RiRouterFill id="computer-icon" /> <span className="laptop">ROUTERS</span>
               </div>
-              <div className="tablet" id="tablet">
+              {/* <div className="tablet" id="tablet">
                 <p>Hide </p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className=" col-xxl-8 col-lg-12 col-md-12 col-sm-12 images-slides">
