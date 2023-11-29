@@ -91,7 +91,7 @@
 
 
 .pag-2 {
-    padding-left: 67%;
+    padding-left: 214%;
 }
 
 .data-found{
@@ -99,3 +99,9 @@
     font-size: 50px;
     color: #1997ca;
 }
+.active-text{
+    text-decoration: underline;
+    background-color:#1997ca;
+    color: white;
+}
+

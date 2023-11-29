@@ -11,7 +11,8 @@ import FormPage from "./Crud_Api/FormPage";
 import Crud_Search from "./Crud_Api/Crud_Search";
 import Crud_Form from "./Crud_Api/Crud_Form";
 import Edit_Crud from "./Crud_Api/Edit_Crud";
-import Crud_Page from "./Crud_Page";
+
+import SearchPage2 from "./Crud_Api/SearchPage2";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
 
           <Route exact path="/search-page" element={<SearchPage />}></Route>
           <Route exact path="/form-page" element={<FormPage />}></Route>
-          <Route exact path="/crud-page" element={<Crud_Page />}></Route>
+        
+          <Route exact path="/page2" element={<SearchPage2 />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
