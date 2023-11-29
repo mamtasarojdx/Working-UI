@@ -512,86 +512,25 @@ function Crud_Search() {
         </div>
 
         {/* {filteredArray3 < 10 ? ( */}
-        {
-          filteredArray3 ? (
-            currentPost2 < 10 ? (
-              <>
-                {searchText ? (
-                  ""
-                ) : (
-                  <div className="pag-1 d-inline-flex fw-bold m-1">
-                    {searchText2 ? (
-                      ""
-                    ) : (
-                      <>
-                        {filteredArray2.length >= 1 ? (
-                          ""
-                        ) : (
-                          <>
-                            {pages.map((page, index) => {
-                              return (
-                                <button key={index} onClick={() => setCurrentPage(page)} className={page === currentPage ? "activePage active-text" : "pag1"}>
-                                  {page}
-                                </button>
-                              );
-                            })}
-                            <div className="d-inline-flex pag-2">
-                              <button
-                                type="button"
-                                id="prev"
-                                className="bt2 fw-bold c"
-                                onClick={prevClick}
-                                style={{ border: "1px solid rgba(228, 219, 230, 0.399)" }}
-                              >
-                                PREV
-                              </button>
-                              <button type="button" className="bt2 fw-bold" onClick={firstClick} style={{ border: "1px solid rgba(228, 219, 230, 0.399)" }}>
-                                FIRST
-                              </button>
-                              <button type="button" className="bt2 fw-bold" onClick={lastClick} style={{ border: "1px solid rgba(228, 219, 230, 0.399)" }}>
-                                LAST
-                              </button>
-                              <button
-                                type="button"
-                                id="next"
-                                className="bt2 fw-bold"
-                                onClick={nextClick}
-                                style={{ border: "1px solid rgba(228, 219, 230, 0.399)" }}
-                              >
-                                NEXT
-                              </button>
-                            </div>
-                          </>
-                        )}
-                      </>
-                    )}
-                  </div>
-                )}
-              </>
-            ) : (
-              <>
-                {" "}
-                {/* {searchText ?
-                  ("")
-                  :(<> */}
+        {filteredArray3 ? (
+          currentPost2 < 10 ? (
+            <>
+              {searchText ? (
+                ""
+              ) : (
                 <div className="pag-1 d-inline-flex fw-bold m-1">
-                  {/* {console.log("pages2", pages2)} */}
-                  {filteredArray.length <= 1 ? (
+                  {searchText2 ? (
                     ""
                   ) : (
                     <>
-                      {pages2.length <= 1 ? (
+                      {filteredArray2.length >= 1 ? (
                         ""
                       ) : (
                         <>
-                          {pages2.map((page2, index2) => {
+                          {pages.map((page, index) => {
                             return (
-                              <button
-                                key={index2}
-                                onClick={() => setCurrentPage2(page2)}
-                                className={page2 === currentPage2 ? "activePage active-text" : "pag1"}
-                              >
-                                {page2}
+                              <button key={index} onClick={() => setCurrentPage(page)} className={page === currentPage ? "activePage active-text" : "pag1"}>
+                                {page}
                               </button>
                             );
                           })}
@@ -626,15 +565,64 @@ function Crud_Search() {
                     </>
                   )}
                 </div>
-              </>
-            )
+              )}
+            </>
           ) : (
-            ""
+            <>
+              {" "}
+              <div className="pag-1 d-inline-flex fw-bold m-1">
+                {/* {console.log("pages2", pages2)} */}
+                {filteredArray.length <= 1 ? (
+                  ""
+                ) : (
+                  <>
+                    {pages2.length <= 1 ? (
+                      ""
+                    ) : (
+                      <>
+                        {pages2.map((page2, index2) => {
+                          return (
+                            <button key={index2} onClick={() => setCurrentPage2(page2)} className={page2 === currentPage2 ? "activePage active-text" : "pag1"}>
+                              {page2}
+                            </button>
+                          );
+                        })}
+                        <div className="d-inline-flex pag-2">
+                          <button
+                            type="button"
+                            id="prev"
+                            className="bt2 fw-bold c"
+                            onClick={prevClick}
+                            style={{ border: "1px solid rgba(228, 219, 230, 0.399)" }}
+                          >
+                            PREV
+                          </button>
+                          <button type="button" className="bt2 fw-bold" onClick={firstClick} style={{ border: "1px solid rgba(228, 219, 230, 0.399)" }}>
+                            FIRST
+                          </button>
+                          <button type="button" className="bt2 fw-bold" onClick={lastClick} style={{ border: "1px solid rgba(228, 219, 230, 0.399)" }}>
+                            LAST
+                          </button>
+                          <button
+                            type="button"
+                            id="next"
+                            className="bt2 fw-bold"
+                            onClick={nextClick}
+                            style={{ border: "1px solid rgba(228, 219, 230, 0.399)" }}
+                          >
+                            NEXT
+                          </button>
+                        </div>
+                      </>
+                    )}
+                  </>
+                )}
+              </div>
+            </>
           )
-          // ) : (
-          //   ""
-          // )}
-        }
+        ) : (
+          ""
+        )}
       </section>
     </div>
   );
